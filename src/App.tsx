@@ -1,25 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Counter, CounterRed, Form, TimerPadre, User } from './components';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>React + Typescript</h1>
+      <hr />
+      <h2>useState</h2>
+      <Counter />
+      <br />
+      <User />
+      <h2>useEffect - useRef</h2>
+      <hr />
+      <TimerPadre />
+      <h2>useReducer</h2>
+      <hr />
+      <CounterRed />
+      <br />
+      <h2>Custom Hooks</h2>
+      <hr />
+      <Form />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </>
   );
 }
 
